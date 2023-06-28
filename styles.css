@@ -1,4 +1,46 @@
-.logo {
-    background: black;
-    color: white;
+@font-face {
+    font-family: Norse Bold;
+    src: url(/fonts/Norse-Bold.otf);
 }
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.left {
+    position: relative;
+}
+
+.plant-image {
+    max-width: 30vw;
+    min-width: 300px;
+    height: 100vh;
+}
+
+.logo {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    min-width: 100%;
+    min-height: 20%;
+    top: 10em;
+}
+
+.logo-image {
+    width: 80px;
+    height: auto;
+}
+
+.logo-text {
+    font-family: "Norse Bold";
+    font-size: 60px;
+    align-self: flex-end;
+}
+
+
+

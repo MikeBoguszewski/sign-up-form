@@ -24,6 +24,7 @@ body {
     min-width: 250px;
     box-sizing: border-box;
     height: 100%;
+    display: block;
 }
 
 .logo {
@@ -52,7 +53,7 @@ body {
 .right {
     box-sizing: border-box;
     height: 100vh;
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 h2 {
@@ -67,7 +68,7 @@ h2 {
 #account-form {
     background: white;
     margin-top: 50px;
-    height: 40vh;
+    min-height: 40vh;
     width: 70vw;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -105,6 +106,32 @@ label {
 .error:invalid {
     border: solid red;
 }
+
+button {
+    width: 180px;
+    height: 40px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #596D48;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+:link {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
+
 
 
 

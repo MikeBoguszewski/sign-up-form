@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
     <title>Sign-up Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+      </style>
 </head>
 <body>
     <div class="left">
@@ -21,36 +24,25 @@
         <h2>You <em>know</em> you want to.</h2>
     <form id="account-form">
         <h2>Let's do this!</h2>
+    <div class="input-container">
         <div class="form-row">
-            <label for="first-name">
-                First Name
-                <input type="text" name="first-name" id="first-name">
-            </label>
-            <label for="last-name">
-                Last Name
-                <input type="text" name="last-name" id="last-name">
-            </label>
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" name="first-name" id="first-name">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password" class="error" required>
         </div>
         <div class="form-row">
-            <label for="email">
-                Email
-                <input type="email" name="email" id="email">
-            </label>
-            <label for="phone-number">
-                Phone Number
-                <input type="tel" name="phone-number" id="phone-number">
-            </label>
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="last-name" id="last-name">
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="tel" name="phone-number" id="phone-number">
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input type="password" name="confirm-password" id="confirm-password" class="error" required>
+            
         </div>
-        <div class="form-row">
-            <label for="password">
-                Password
-                <input type="password" name="password" id="password">
-            </label>
-            <label for="confirm-password">
-                Confirm Password
-                <input type="password" name="confirm-password" id="confirm-password">
-            </label>
-        </div>
+    </div>
     </form>
     <button type="submit" form="account-form">Create Account</button>
     <p>Already have an account? <a href="#">Log in</a></p>

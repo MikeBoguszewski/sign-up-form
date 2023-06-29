@@ -3,20 +3,27 @@
     src: url(/fonts/Norse-Bold.otf);
 }
 
-body {
-    display: flex;
+* {
     margin: 0;
     padding: 0;
 }
 
+body {
+    display: flex;
+    background-color: whitesmoke;
+}
+
 .left {
     position: relative;
+    box-sizing: border-box;
+    height: 100vh;
 }
 
 .plant-image {
     max-width: 30vw;
     min-width: 300px;
-    height: 100vh;
+    box-sizing: border-box;
+    height: 100%;
 }
 
 .logo {
@@ -39,8 +46,34 @@ body {
 .logo-text {
     font-family: "Norse Bold";
     font-size: 60px;
-    align-self: flex-end;
+    margin-top: 30px;
 }
+
+.right {
+    box-sizing: border-box;
+    height: 100vh;
+    margin-top: 150px;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.right > h2 {
+    margin: 0px 50px 25px 50px;
+}
+
+#account-form {
+    background: white;
+    margin-top: 50px;
+}
+
+#account-form * {
+    margin: 0px 0px 0px 50px;
+}
+
+
+
 
 
 
